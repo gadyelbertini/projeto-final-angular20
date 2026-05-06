@@ -9,10 +9,10 @@
   "devDependencies": {
     "json-server": "^1.0.0-beta.15"
   },
+  "scripts": {
+    "start": "npx json-server --watch pessoas.json --port $PORT"
+  },
   "dependencies": {
     "json-server": "^0.17.0"
-  },
-  "scripts": {
-    "start": "npx json-server --watch backend/pessoas.json --port 3000"
   }
 }
