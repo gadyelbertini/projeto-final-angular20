@@ -8,7 +8,7 @@ import { Pessoa } from '../module/Pessoa';
 })
 export class ApiPessoas {
   // URL da API
-  private url:string = 'http://localhost:3000/pessoas/';
+  private url:string = 'https://backend-mfs3.onrender.com/pessoas/';
 
   // Construtor
   constructor(private http:HttpClient){}
