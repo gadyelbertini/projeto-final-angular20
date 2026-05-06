@@ -20,7 +20,7 @@ export class ApiPessoas {
 
   // Cadastrar pessoas
   cadastrar(pessoa:Pessoa):Observable<Pessoa>{
-    return this.http.post<Pessoa>(this.url, JSON.stringify(pessoa));
+    return this.http.post<Pessoa>(this.url, pessoa);
   }
 
   // Selecionar pessoa por id
@@ -31,7 +31,7 @@ export class ApiPessoas {
 
   // Alterar pessoas
   alterar(pessoa:Pessoa):Observable<Pessoa>{
-    return this.http.put<Pessoa>(this.url+pessoa.id, JSON.stringify(pessoa));
+    return this.http.put<Pessoa>(`${this.url}${pessoa.id}`, pessoa);
   }
 
   // Remover pessoas
