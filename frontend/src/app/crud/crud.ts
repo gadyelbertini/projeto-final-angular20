@@ -56,7 +56,7 @@ export class Crud {
     // Limpar o formulÃ¡rio
     this.formularioPessoa.reset();
   }
-  
+
   // MÃ©todo para selecionar uma pessoa especÃ­fica
   selecionarPessoa(id:string):void{
     this.servico.selecionarPessoa(id).subscribe(pessoa => {
@@ -67,5 +67,11 @@ export class Crud {
       // Visibilidade dos botÃµes
       this.btnCadastrar = false;
     });
+  }
+
+  // MÃ©todo para cancelar as aÃ§Ãµes de alteraÃ§Ã£o e remoÃ§Ã£o
+  cancelar():void{
+    this.formularioPessoa.reset();
+    this.btnCadastrar = true;
   }
 }
