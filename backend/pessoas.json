@@ -1,11 +1,6 @@
 {
   "pessoas": [
     {
-      "nome": "Gadyel",
-      "cidade": "Turmalina",
-      "id": "NB2WgLv-gB4"
-    },
-    {
       "nome": "Debora",
       "cidade": "Paranaiba",
       "id": "sBw494WH9mo"
@@ -19,6 +14,21 @@
       "nome": "João",
       "cidade": "São Paulo",
       "id": "EsgYD89Fer0"
+    },
+    {
+      "nome": "Joaquim",
+      "cidade": "Jales",
+      "id": "Cf4-f8FT5ds"
+    },
+    {
+      "id": "QWclO5ZeRf4",
+      "nome": "Mario",
+      "cidade": "Fernandópolis"
+    },
+    {
+      "nome": "Gadyel",
+      "cidade": "Turmalina",
+      "id": "pjsmsO_gA2Y"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
