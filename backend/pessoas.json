@@ -6,9 +6,9 @@
       "id": "sBw494WH9mo"
     },
     {
+      "id": "F6svhvrT3L0",
       "nome": "Maria",
-      "cidade": "Chapadão do Sul",
-      "id": "F6svhvrT3L0"
+      "cidade": "Brasilia"
     },
     {
       "nome": "João",
@@ -21,14 +21,14 @@
       "id": "Cf4-f8FT5ds"
     },
     {
-      "id": "QWclO5ZeRf4",
-      "nome": "Mario",
-      "cidade": "Fernandópolis"
+      "id": "pjsmsO_gA2Y",
+      "nome": "Gadyel",
+      "cidade": "Paranaiba"
     },
     {
-      "nome": "Gadyel",
-      "cidade": "Turmalina",
-      "id": "pjsmsO_gA2Y"
+      "nome": "Josefina",
+      "cidade": "Paraiba",
+      "id": "spphLT1MGC8"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
