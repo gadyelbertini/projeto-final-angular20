@@ -39,12 +39,12 @@ export class Crud {
     this.listar();
   }
 
-  // MÃ©todo para selecionar todas as pessoas da API
+  // Método para selecionar todas as pessoas da API
   listar():void{
     this.servico.listar().subscribe(pessoas => this.vetor = pessoas);
   }
 
-  // MÃ©todo para cadastrar pessoas
+  // Método para cadastrar pessoas
   cadastrar():void{
     // Criar um novo objeto
     let obj = {...this.formularioPessoa.value}; // Copia todas as caracterÃ­sticas do nosso formulÃ¡rio reativo (via spred operator).
@@ -57,7 +57,7 @@ export class Crud {
     this.formularioPessoa.reset();
   }
 
-  // MÃ©todo para selecionar uma pessoa especÃ­fica
+  // Método para selecionar uma pessoa especÃ­fica
   selecionarPessoa(id:string):void{
     this.servico.selecionarPessoa(id).subscribe(pessoa => {
 
@@ -69,9 +69,28 @@ export class Crud {
     });
   }
 
-  // MÃ©todo para cancelar as aÃ§Ãµes de alteraÃ§Ã£o e remoÃ§Ã£o
+  // Método para cancelar as aÃ§Ãµes de alteraÃ§Ã£o e remoÃ§Ã£o
   cancelar():void{
     this.formularioPessoa.reset();
     this.btnCadastrar = true;
+  }
+
+  // Método para alterar dados
+  alterar():void{
+    this.servico.alterar(this.formularioPessoa.value)
+    .subscribe(pessoa => {
+
+      // Obter o Ã­ndice da pessoa alterada no vetor
+      const indicePessoaAlterada = this.vetor.findIndex(obj => obj.id === pessoa.id);
+
+      // Atualizar valor do vetor
+      this.vetor[indicePessoaAlterada] = pessoa;
+
+      // ForÃ§ar a atualizaÃ§Ã£o do vetor (para exibir corretamente na tabela)
+      this.vetor = [...this.vetor];
+
+      // Visibilidade dos botÃµes e limpeza dos campos
+      this.cancelar();
+    });
   }
 }

@@ -26,9 +26,9 @@
       "id": "Cf4-f8FT5ds"
     },
     {
+      "id": "QWclO5ZeRf4",
       "nome": "Mario",
-      "cidade": "Aparecida do Taboado",
-      "id": "QWclO5ZeRf4"
+      "cidade": "Fernandópolis"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
