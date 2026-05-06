@@ -1,3 +1,25 @@
 {
-	"pessoas":[]
+  "pessoas": [
+    {
+      "nome": "Gadyel",
+      "cidade": "Turmalina",
+      "id": "NB2WgLv-gB4"
+    },
+    {
+      "nome": "Debora",
+      "cidade": "Paranaiba",
+      "id": "sBw494WH9mo"
+    },
+    {
+      "nome": "Maria",
+      "cidade": "Chapadão do Sul",
+      "id": "F6svhvrT3L0"
+    },
+    {
+      "nome": "João",
+      "cidade": "São Paulo",
+      "id": "EsgYD89Fer0"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
