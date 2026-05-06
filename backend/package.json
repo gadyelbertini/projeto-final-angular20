@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "start": "npx json-server --watch pessoas.json --port 3000"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "json-server": "^1.0.0-beta.15"
+  },
+  "dependencies": {
+    "json-server": "^0.17.0"
+  },
+  "scripts": {
+    "start": "npx json-server --watch pessoas.json --port 3000"
   }
 }
