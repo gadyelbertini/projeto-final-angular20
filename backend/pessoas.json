@@ -19,6 +19,16 @@
       "nome": "João",
       "cidade": "São Paulo",
       "id": "EsgYD89Fer0"
+    },
+    {
+      "nome": "Joaquim",
+      "cidade": "Jales",
+      "id": "Cf4-f8FT5ds"
+    },
+    {
+      "nome": "Mario",
+      "cidade": "Aparecida do Taboado",
+      "id": "QWclO5ZeRf4"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
