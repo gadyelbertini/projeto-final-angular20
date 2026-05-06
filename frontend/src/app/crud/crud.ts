@@ -93,4 +93,23 @@ export class Crud {
       this.cancelar();
     });
   }
+
+  // Método para remover pessoas
+  remover():void{
+    this.servico.remover(this.formularioPessoa.value.id)
+    .subscribe(pessoa => {
+
+      // Obter o Ã­ndice da pessoa removida no vetor
+      const indicePessoaRemovida = this.vetor.findIndex(obj => obj.id === pessoa.id);
+
+      // Efetuar a remoÃ§Ã£o no vetor
+      this.vetor.splice(indicePessoaRemovida, 1);
+
+      // ForÃ§ar a atualizaÃ§Ã£o do vetor (para exibir corretamente na tabela)
+      this.vetor = [...this.vetor];
+
+      // Visibilidade dos botÃµes e limpeza dos campos
+      this.cancelar();
+    });
+  }
 }
