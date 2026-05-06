@@ -1,1 +1,25 @@
-<p>crud works!</p>
+<form>
+  <mat-form-field class="ocultarId">
+    <input matInput>
+  </mat-form-field>
+
+  <mat-form-field class="larguraCampos">
+    <mat-label>Nome</mat-label>
+    <input matInput placeholder="Informe o nome">
+  </mat-form-field>
+
+  <mat-form-field class="larguraCampos">
+    <mat-label>Cidade</mat-label>
+    <input matInput placeholder="Informe a cidade">
+  </mat-form-field>
+
+  @if (btnCadastrar) {
+    <button matButton="elevated" class="espacamentoBotao">Cadastrar</button>
+  } @else {
+    <button matButton="elevated" class="espacamentoBotao">Alterar</button>
+    <button matButton="elevated" class="espacamentoBotao">Remover</button>
+    <button matButton="elevated" class="espacamentoBotao">Cancelar</button>
+  }
+
+
+</form>
